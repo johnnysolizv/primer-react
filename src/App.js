@@ -1,19 +1,19 @@
-
+import React from 'react';
 import './App.css';
+import PersonCards from './components/PersonCards';
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <h1 className="root">Hola Dojo!</h1>  
-      <ul className="root">
-        <h1>Things I need to do:</h1>
-        <li>Learn React</li>
-        <li>Climb Mt. Everest</li>
-        <li>Run a marathon</li>
-        <li>Feed the dogs</li>
-          
-       </ul>
-
+      <PersonCards firstName="Johnny" lastName="Soliz" age={31} haircolor="Black" />
+      <PersonCards firstName="Juan" lastName="Perez" age={20} haircolor="Yellow" />    
+      <PersonCards firstName="Pedro" lastName="Perozo" age={35} haircolor="White" />
+      <PersonCards firstName="Alberto" lastName="Tolon" age={45} haircolor="Grey" />
+      
     </div>
   );
 }
